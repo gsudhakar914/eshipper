@@ -1,0 +1,23 @@
+
+entity CommissionReportStatus {
+	name String
+}
+entity CommissionReport {
+	cutOffDate LocalDate,
+    additionalComment String
+    created LocalDate,
+    workOrders Integer,
+    totalAmount Float
+}
+entity WoSalesAgent {
+}
+relationship ManyToOne {
+	CommissionReport{woSalesAgent} to WoSalesAgent
+    CommissionReport{commissionReportStatus} to CommissionReportStatus
+}
+paginate all with pagination
+
+dto all with mapstruct
+
+service all with serviceImpl
+
