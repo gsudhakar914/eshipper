@@ -1,0 +1,16 @@
+{
+  "name": "WoSalesAgent",
+  "fields": [],
+  "relationships": [],
+  "changelogDate": "20200608105732",
+  "entityTableName": "wo_sales_agent",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
