@@ -1,0 +1,52 @@
+{
+  "name": "CommissionReport",
+  "fields": [
+    {
+      "fieldName": "cutOffDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "additionalComment",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "created",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "workOrders",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "totalAmount",
+      "fieldType": "Float"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "woSalesAgent",
+      "otherEntityRelationshipName": "commissionReport",
+      "relationshipName": "woSalesAgent",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "commissionReportStatus",
+      "otherEntityRelationshipName": "commissionReport",
+      "relationshipName": "commissionReportStatus",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200615120608",
+  "entityTableName": "commission_report",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

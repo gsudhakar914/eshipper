@@ -1,0 +1,22 @@
+{
+  "eshipperApp": {
+    "commissionStatus": {
+      "home": {
+        "title": "Commission Statuses",
+        "createLabel": "Create a new Commission Status",
+        "createOrEditLabel": "Create or edit a Commission Status",
+        "notFound": "No Commission Statuses found"
+      },
+      "created": "A new Commission Status is created with identifier {{ param }}",
+      "updated": "A Commission Status is updated with identifier {{ param }}",
+      "deleted": "A Commission Status is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Commission Status {{ id }}?"
+      },
+      "detail": {
+        "title": "Commission Status"
+      },
+      "name": "Name"
+    }
+  }
+}
