@@ -1,0 +1,58 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="commissionReport">
+            <h2><span jhiTranslate="eshipperApp.commissionReport.detail.title">Commission Report</span> {{ commissionReport.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="eshipperApp.commissionReport.cutOffDate">Cut Off Date</span></dt>
+                <dd>
+                    <span>{{ commissionReport.cutOffDate }}</span>
+                </dd>
+                <dt><span jhiTranslate="eshipperApp.commissionReport.additionalComment">Additional Comment</span></dt>
+                <dd>
+                    <span>{{ commissionReport.additionalComment }}</span>
+                </dd>
+                <dt><span jhiTranslate="eshipperApp.commissionReport.created">Created</span></dt>
+                <dd>
+                    <span>{{ commissionReport.created }}</span>
+                </dd>
+                <dt><span jhiTranslate="eshipperApp.commissionReport.workOrders">Work Orders</span></dt>
+                <dd>
+                    <span>{{ commissionReport.workOrders }}</span>
+                </dd>
+                <dt><span jhiTranslate="eshipperApp.commissionReport.totalAmount">Total Amount</span></dt>
+                <dd>
+                    <span>{{ commissionReport.totalAmount }}</span>
+                </dd>
+                <dt><span jhiTranslate="eshipperApp.commissionReport.woSalesAgent">Wo Sales Agent</span></dt>
+                <dd>
+                    <div *ngIf="commissionReport.woSalesAgentId">
+                        <a [routerLink]="['/wo-sales-agent', commissionReport.woSalesAgentId, 'view']">{{ commissionReport.woSalesAgentId }}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="eshipperApp.commissionReport.commissionReportStatus">Commission Report Status</span></dt>
+                <dd>
+                    <div *ngIf="commissionReport.commissionReportStatusId">
+                        <a [routerLink]="['/commission-report-status', commissionReport.commissionReportStatusId, 'view']">{{ commissionReport.commissionReportStatusId }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/commission-report', commissionReport.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
