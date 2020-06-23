@@ -1,0 +1,42 @@
+entity WoWorkOrder {
+
+}
+entity EdiShippingOrder {
+
+}
+entity CommissionStatus {
+	id Long,
+    name String
+}
+entity CommissionReportStatus {
+	name String
+}
+entity ElasticSearchCommReport{
+}
+entity ElasticStatus{
+}
+entity CommissionReport {
+	cutOffDate LocalDate,
+    additionalComment String
+    created LocalDate,
+    workOrders Integer,
+    totalAmount Float
+}
+entity WoSalesAgent {
+}
+relationship OneToOne {
+	CommissionReport to ElasticSearchCommReport
+}
+relationship ManyToOne {
+	ElasticSearchCommReport{status} to ElasticStatus
+	CommissionReport{woSalesAgent} to WoSalesAgent
+    CommissionReport{commissionReportStatus} to CommissionReportStatus
+    WoWorkOrder{commissionStatus} to CommissionStatus
+    EdiShippingOrder{commissionStatus} to CommissionStatus
+}
+paginate all with pagination
+
+dto all with mapstruct
+
+service all with serviceImpl
+
