@@ -1,0 +1,22 @@
+{
+  "eshipperApp": {
+    "ediShippingOrder": {
+      "home": {
+        "title": "Edi Shipping Orders",
+        "createLabel": "Create a new Edi Shipping Order",
+        "createOrEditLabel": "Create or edit a Edi Shipping Order",
+        "notFound": "No Edi Shipping Orders found"
+      },
+      "created": "A new Edi Shipping Order is created with identifier {{ param }}",
+      "updated": "A Edi Shipping Order is updated with identifier {{ param }}",
+      "deleted": "A Edi Shipping Order is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Edi Shipping Order {{ id }}?"
+      },
+      "detail": {
+        "title": "Edi Shipping Order"
+      },
+      "commissionStatus": "Commission Status"
+    }
+  }
+}

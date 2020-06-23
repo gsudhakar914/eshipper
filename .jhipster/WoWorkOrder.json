@@ -1,0 +1,24 @@
+{
+  "name": "WoWorkOrder",
+  "fields": [],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "commissionStatus",
+      "otherEntityRelationshipName": "woWorkOrder",
+      "relationshipName": "commissionStatus",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200623054057",
+  "entityTableName": "wo_work_order",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
