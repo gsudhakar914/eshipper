@@ -1,0 +1,29 @@
+{
+  "eshipperApp": {
+    "commissionReport": {
+      "home": {
+        "title": "Commission Reports",
+        "createLabel": "Create a new Commission Report",
+        "createOrEditLabel": "Create or edit a Commission Report",
+        "notFound": "No Commission Reports found"
+      },
+      "created": "A new Commission Report is created with identifier {{ param }}",
+      "updated": "A Commission Report is updated with identifier {{ param }}",
+      "deleted": "A Commission Report is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Commission Report {{ id }}?"
+      },
+      "detail": {
+        "title": "Commission Report"
+      },
+      "cutOffDate": "Cut Off Date",
+      "additionalComment": "Additional Comment",
+      "created": "Created",
+      "workOrders": "Work Orders",
+      "totalAmount": "Total Amount",
+      "elasticSearchCommReport": "Elastic Search Comm Report",
+      "woSalesAgent": "Wo Sales Agent",
+      "commissionReportStatus": "Commission Report Status"
+    }
+  }
+}

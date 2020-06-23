@@ -47,6 +47,14 @@ public class CacheConfiguration {
             createCache(cm, com.eshipper.domain.User.class.getName());
             createCache(cm, com.eshipper.domain.Authority.class.getName());
             createCache(cm, com.eshipper.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.eshipper.domain.WoWorkOrder.class.getName());
+            createCache(cm, com.eshipper.domain.EdiShippingOrder.class.getName());
+            createCache(cm, com.eshipper.domain.CommissionStatus.class.getName());
+            createCache(cm, com.eshipper.domain.CommissionReportStatus.class.getName());
+            createCache(cm, com.eshipper.domain.ElasticSearchCommReport.class.getName());
+            createCache(cm, com.eshipper.domain.ElasticStatus.class.getName());
+            createCache(cm, com.eshipper.domain.CommissionReport.class.getName());
+            createCache(cm, com.eshipper.domain.WoSalesAgent.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

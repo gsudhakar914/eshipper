@@ -1,0 +1,31 @@
+{
+  "name": "ElasticSearchCommReport",
+  "fields": [],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "elasticStatus",
+      "otherEntityRelationshipName": "elasticSearchCommReport",
+      "relationshipName": "status",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "commissionReport",
+      "otherEntityRelationshipName": "elasticSearchCommReport",
+      "relationshipName": "commissionReport",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20200623054457",
+  "entityTableName": "elastic_search_comm_report",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

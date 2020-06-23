@@ -1,0 +1,23 @@
+{
+  "eshipperApp": {
+    "elasticSearchCommReport": {
+      "home": {
+        "title": "Elastic Search Comm Reports",
+        "createLabel": "Create a new Elastic Search Comm Report",
+        "createOrEditLabel": "Create or edit a Elastic Search Comm Report",
+        "notFound": "No Elastic Search Comm Reports found"
+      },
+      "created": "A new Elastic Search Comm Report is created with identifier {{ param }}",
+      "updated": "A Elastic Search Comm Report is updated with identifier {{ param }}",
+      "deleted": "A Elastic Search Comm Report is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Elastic Search Comm Report {{ id }}?"
+      },
+      "detail": {
+        "title": "Elastic Search Comm Report"
+      },
+      "status": "Status",
+      "commissionReport": "Commission Report"
+    }
+  }
+}

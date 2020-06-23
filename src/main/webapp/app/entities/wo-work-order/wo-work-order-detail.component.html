@@ -1,0 +1,32 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="woWorkOrder">
+            <h2><span jhiTranslate="eshipperApp.woWorkOrder.detail.title">Wo Work Order</span> {{ woWorkOrder.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="eshipperApp.woWorkOrder.commissionStatus">Commission Status</span></dt>
+                <dd>
+                    <div *ngIf="woWorkOrder.commissionStatusId">
+                        <a [routerLink]="['/commission-status', woWorkOrder.commissionStatusId, 'view']">{{ woWorkOrder.commissionStatusId }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/wo-work-order', woWorkOrder.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
